@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Votre reservation d'hotel
+    <h2>*Champs obligatoires <br/>
+
+    <form #action="/action_page.php" method="get">
+        <label for="text">Votre nom*:</label>
+        <input type="text" name="nom" required> <br/>
+        <label for="text">Votre prénom*:</label>
+        <input type="text" name="prenom" required> <br/>
+        <label for="tel">Votre numéro*:</label>
+        <input type="tel" name="tel" required> <br/>
+        <label for="email">Votre adresse mail*:</label>
+        <input type="email" name="mail" required> <br/>
+        <label for="ville">Votre ville:</label>
+        <select id="ville" name="ville">
+            <option value="lille">Lille</option>
+            <option value="paris">Paris</option>
+            <option value="bordeaux">Bordeaux</option>
+            <option value="marseille">Marseille</option>
+            <option value="nantes">Nantes</option>
+            <option value="lyon">Lyon</option>
+            <option value="larochelle">La Rochelle</option>
+            <option value="poitiers">Poitiers</option>
+            <option value="toulouse">Toulouse</option>
+        </select> <br/>
+        <label for="date">Votre date d'arrivée:</label>
+        <input type="date" name="date"> <br/>
+        <label for="number">Nombre de personnes*:</label>
+        <input type="number" name="nombre" min="1" Max="10" required> <br/>
+        <label for="checkbox">Vos options:</label>
+        <input type="checkbox" name="option1" value="Climatisation">
+        <label for="option1"> Climatisation</label>
+        <input type="checkbox" name="option2" value="Mini bar">
+        <label for="option2"> Mini bar</label>
+        <input type="checkbox" name="option3" value="Jaccuzy">
+        <label for="option3"> Jaccuzi</label><br/>
+        <label for="message">Envoyer un commentaire:</label>
+        <textarea name="message" rows="1" cols="30">
+        </textarea><br/>
+        <label for="radio">J'accepte les conditions de vente:</label>
+        <input type="radio" name="conditions" value="oui">
+        <label for="oui">J'accepte</label>
+        <input type="radio" name="conditions" value="non">
+        <label for="non">Je refuse</label><br>
+        </select>
+        <input type="submit" value="Envoyer ma demande"><br/>
+    </form>
+<!-- Fin -->
+</body>
+</html>
